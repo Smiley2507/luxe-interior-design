@@ -3,7 +3,7 @@
 *Hello Guys;*
 This is yet another project I make while learning html and CSS. In this project I used some JavaScript and I linked the form to the database using XAMMP. 
 
-Here is the live website: 
+Here is the live website: https://luxeinterior.vercel.app/
 
 ***Disclaimer***
 
