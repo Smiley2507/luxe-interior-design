@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Interior Design | Transforming Space, Transforming Lives</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="blur">
+        <header>
+            <div class="logo">
+                <img src="/images/Logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="#"><button class="btn" onclick="toggle()">Book A Session</button></a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </header>       
+
+        <div class="hero">
+            <div class="content">
+                <h1>Transforming Spaces, Transforming Lives</h1>
+                <div class="para">
+                    <p>At Luxe Interiors, we believe that your living space should be a reflection of your personality and style. 
+                        Our team of expert designers is dedicated to creating beautiful,
+                        functional spaces that enhance your lifestyle and bring your vision to life.</p>
+                </div>
+            </div>
+            <div class="heroimg">
+                <img src="/images/interior.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--Pop up form-->
+        <div class="popup" id="popup">
+           <div class="popup-content">
+               <div class="header">
+                   <h2 style="color: #606c38;">Book A Session</h2>
+                   <a href="#" onclick="toggle()" style="background-color: transparent; color: red;">Close</a>
+               </div>
+               <p>Book a free consultation session today. Let's discuss how we can help you upgrade you home's interior design. Fill the form below and we will reach out to you!</p>
+               <form action="connect.php" method="post">
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <input type="submit" class="btn" value="Submit">
+            </form>            
+           </div>
+       </div>
+    <section class="services">
+        <div class="hero">
+            <h1 style="text-align: center; padding: 2rem;">Our Services</h1>
+            <div class="block">
+                <div class="gridbox">
+                    <img src="/images/interior 1.jpg" alt="iimage">
+                    <h4><a href="#">Residential Design</a></h4>
+                </div>
+                <div class="gridbox">
+                    <img src="/images/commercial.jpg" alt="image">
+                    <h4><a href="#">Commercial Design</a></h4>
+                </div>
+                <div class="gridbox">
+                    <img src="/images/renovation.jpg" alt="image">
+                    <h4><a href="#">Renovation and Remodeling</a></h4>
+                </div>
+                <div class="gridbox">
+                    <img src="/images/CONSULTING.jpg" alt="image">
+                    <h4><a href="#">Consulting Services</a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero why">
+        <h1 style="text-align: center; padding: 2rem;">Why Choose Us?</h1>
+        <div class="infocards">
+            <div class="card">
+                    <img src="/images/team-line.svg" alt="team icon">
+                    <h3>Experienced Team</h3>
+                    <p>Our designers have years of experience and a passion for creating stunning interiors.</p>
+            </div>
+            <div class="card">
+                    <img src="/images/palette-line.svg" alt="team icon">
+                    <h3>Personalized Approach</h3>
+                    <p>Our designers have years of experience and a passion for creating stunning interiors.</p>
+            </div>
+        </div>
+         <div class="infocards">
+            <div class="card">
+                    <img src="/images/sparkling-2-line.svg" alt="team icon">
+                    <h3>Quality Assurance</h3>
+                    <p>Our designers have years of experience and a passion for creating stunning interiors.</p>
+            </div>
+            <div class="card">
+                    <img src="/images/service-line.svg" alt="team icon">
+                    <h3 class="heading">Client Satisfaction</h3>
+                    <p>Our designers have years of experience and a passion for creating stunning interiors.</p>
+            </div>
+        </div>
+    </section>
+    <section class="works hero">
+        <h1 style="text-align: center; padding: 2rem;">Some of Our Works</h1>
+        <div class="gallery">
+                <img src="/images/interior2.jpg" alt="interior Design">
+                <img src="/images/interior3.jpg" alt="interior Design">
+                <img src="/images/interior4.jpg" alt="interior Design">
+        </div>
+        <div class="gallery">
+            <img src="/images/interior5.jpg" alt="interior Design">
+            <img src="/images/interior6.jpg" alt="interior Design">
+            <img src="/images/interior7.jpg" alt="interior Design">
+        </div>
+        <a href="#"></a><button class="btn btt">View More</button></a>
+    </section>
+    <footer>
+        <div class="links">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About Us</a>
+            <a href="/services.html">Services</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <div class="links">
+            <a href="https://dribbble.com/Highrunner01" target="_blank"><img src="images/dribbble.svg"></a>
+            <a href="https://github.com/Smiley2507/" target="_blank"><img src="images/facebook.svg"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg"></a>
+        </div>
+        <p>Luxe Interior Design &copy; 2024. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+<script>
+    const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+const btn = document.querySelector('.btn');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    burger.classList.toggle('toggle');
+    btn.classList.toggle('active');
+});
+
+function toggle(){
+    var blur = document.getElementById('blur');
+    blur.classList.toggle('active');
+    var popup = document.getElementById('popup');
+    popup.classList.toggle('active');
+}
+
+</script>
+</html>
