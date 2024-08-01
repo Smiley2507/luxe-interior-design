@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
 :root{
 --primary-color:#606c38;
 --text-color:#283618;
@@ -11,7 +14,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Satoshi';
+    font-family: 'Poppins', sans-serif;
 }
 
 h1{
